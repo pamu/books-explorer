@@ -6,7 +6,7 @@ import Libraries.graphics._
 import Libraries.social._
 import Libraries.date._
 import Libraries.qr._
-import Libraries.playServices._
+//import Libraries.playServices._
 import Libraries.debug._
 import Libraries.net._
 import Crashlytics._
@@ -42,8 +42,8 @@ libraryDependencies ++= Seq(
   aar(androidCardView),
   aar(androidRecyclerview),
   aar(macroidExtras),
-  aar(playServicesBase),
-  aar(playServicesMaps),
+  //aar(playServicesBase),
+  //aar(playServicesMaps),
   okHttp,
   crashlytics,
   playJson,
@@ -85,7 +85,7 @@ packagingOptions in Android := PackagingOptions(excludes = Seq(
 
 packageResources in Android <<= (packageResources in Android).dependsOn(replaceValuesTask)
 
-crashlyticsEnabled := (sys.env.getOrElse("CRASHLYTICS_ENABLED", default = "true") == "true")
+crashlyticsEnabled := (sys.env.getOrElse("CRASHLYTICS_ENABLED", default = "true") == "false")
 
 collectResources in Android <<= (collectResources in Android) dependsOn
   fixNameSpace dependsOn

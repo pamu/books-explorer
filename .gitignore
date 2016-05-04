@@ -31,3 +31,11 @@ proguard/
 # Android Studio captures folder
 captures/
 .idea
+
+target
+
+project/target
+.hostory
+.DS_Store
+*.iml
+
