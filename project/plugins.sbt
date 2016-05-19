@@ -1,6 +1,6 @@
 addSbtPlugin("org.brianmckenna" % "sbt-wartremover" % "0.13")
 
-addSbtPlugin("org.scala-android" % "sbt-android" % "1.6.1")
+addSbtPlugin("org.scala-android" % "sbt-android" % "1.6.2")
 
 resolvers += "Fabric public" at "https://maven.fabric.io/public"
 
